@@ -1,0 +1,101 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  background-color: rgb(250,250,250);
+  font-family: RailwayRegular !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.line {
+  position: relative;
+  margin: 0.5em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+}
+
+.line-colour {
+  background-color: rgb(155,0,88);
+}
+
+.line-hr {
+  width: 100%;
+  height: 0.5em;
+}
+
+.line-hide {
+  display: none;
+}
+
+.line-tickmark {
+  position: absolute;
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.5em;
+  margin: 0.5em auto 1.5em auto;
+}
+
+.line-circle-general {
+  position: absolute;
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgb(250,250,250);
+}
+
+.line-circle-standalone {
+  border: 0.35em solid rgb(16,16,16);
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.line-circle-top {
+
+
+}
+
+.line-circle-middle {
+
+}
+
+.line-circle-bottom {
+
+
+}
+
+
+.text-general {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(16,16,16);
+}
+
+.station {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.station-top {
+  margin-bottom: 0.1em;
+  font-size: 2em;
+}
+
+.station-middle {
+  font-size: 1em;
+}
+
+.station-bottom {
+  font-size: 1em;
+}
+
+

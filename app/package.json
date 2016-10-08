@@ -1,0 +1,13 @@
+{
+  "name": "predictor.tube",
+  "version": "0.0.0",
+  "description": "Train arrival prediction service for London Underground",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/liuchbryan/predictor.tube.git"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

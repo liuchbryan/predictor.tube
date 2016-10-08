@@ -1,0 +1,6 @@
+# Temp files
+*.swp
+
+
+# Node.js libraries
+app/node_modules/*
