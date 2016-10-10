@@ -3,31 +3,59 @@
   padding: 0; 
   box-sizing: border-box;
   background-color: rgb(250,250,250);
-  font-family: RailwayRegular !important;
-  font-weight: normal;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-weight: 100;
   font-style: normal;
+}
+
+.panel {
+  margin: 0.5em auto;
+  background-color: rgba(255,255,255,0);
+}
+
+.panel-elem {
+  background-color: rgba(255,255,255,0);
+}
+
+.text-general {
+  text-align: center;
+  color: rgb(16,16,16);
 }
 
 .line {
   position: relative;
-  margin: 0.5em auto;
+  display: -webkit-flex; /* Old Safari and iOS */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3em;
 }
 
-.line-colour {
-  background-color: rgb(155,0,88);
+.line-hr {
+  width: 100%;
 }
 
-.line-hr {
+.line-hr-general {
   width: 100%;
   height: 0.5em;
 }
 
 .line-hide {
   display: none;
+}
+
+.line-element-centred {
+  position: absolute;
+  vertical-align: middle;
+  top: 0;
+  bottom: 0;
+  transition: all 0.2s linear;
+  left: 0;
+  right: 0;
+}
+
+.line-element-right {
+  
 }
 
 .line-tickmark {
@@ -73,16 +101,72 @@
 
 }
 
+.direction {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  z-index: 0;
+}
 
-.text-general {
-  margin: 0 auto;
-  text-align: center;
-  color: rgb(16,16,16);
+.direction-left {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 0;
+  margin-right: auto;
+  width: 50%;
+  min-width: 10em;
+}
+
+.direction-left-name {
+  justify-content: flex-start;
+  margin-left: 10%;
+  margin-right: auto;
+  padding: 2%;
+}
+
+.direction-left-arrow {
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 10%;
+  padding: 2%;
+}
+
+.direction-right {
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  width: 50%;
+  min-width: 10em;
+}
+
+.direction-right-arrow {
+  justify-content: flex-start;
+  margin-right: auto;
+  margin-left: 10%;
+  padding: 2%;
+}
+
+.direction-right-name {
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 10%;
+  padding: 2%;
 }
 
 .station {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+
+}
+
+.station img {
+  height: 1em;
+  vertical-align: -10%;
 }
 
 .station-top {
@@ -91,7 +175,7 @@
 }
 
 .station-middle {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .station-bottom {

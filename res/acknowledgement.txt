@@ -1,0 +1,5 @@
+Client application font:
+Source Sans Pro Light is used throughout the client application, available
+via Google Fonts API: https://fonts.google.com/specimen/Source+Sans+Pro
+
+The font is available via Open Font License.

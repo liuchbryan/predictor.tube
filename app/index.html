@@ -2,29 +2,59 @@
 <html>
   <head>
     <title>predictor.tube</title>
-    <link rel="stylesheet" media="screen" 
-          href="https://fontlibrary.org/face/railway-sans" type="text/css"/> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" 
+          rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
   </head>
   <body>
-    <div class="line">
-      <div class="line-colour line-hr">
+    <div class="panel line">
+      <div class="panel-elem line-hr">
+        <div class="line-hr-general" style="background-color:rgb(255,211,41)">
+        </div>
 
-      </div> 
-      <div class="line-colour line-tickmark">
+        <div class="line-hr-general" style="background-color:rgb(244,169,190)">
+        </div>
 
+        <div class="line-hr-general" style="background-color:rgb(155,0,88)">
+        </div>
       </div>
-      <div class="line-colour line-circle-general 
-                  line-circle-standalone line-hide">
 
+      <div id="line-element" class="panel-elem line-element-centred">
+        <div class="line-tickmark line-hide"
+             style="background-color:rgb(155,0,88)">
+        </div>
+        <div class="line-circle-general line-circle-standalone">
+        </div>
       </div>
-    
+
     </div>
-   
-    <div class="text-general station"> 
+    
+    <div class="panel direction">
+      <div class="panel-elem direction-left">
+        <div class="panel-elem direction-left-name text-general">
+          King's Cross St. Pancras
+        </div>
+
+        <div class="panel-elem direction-left-arrow text-general">
+          &lt;&lt;&lt;
+        </div>
+      </div>
+
+      <div class="panel-elem direction-right">
+        <div class="panel-elem direction-right-arrow text-general">
+          &gt;&gt;&gt;
+        </div>
+        <div class="panel-elem direction-right-name text-general">
+          King's Cross St. Pancras
+        </div>
+      </div>
+
+    </div>    
+ 
+    <div class="panel station text-general"> 
 
       <div class="station-top">
-        Farringdon
+        King's Cross St. Pancras
       </div> 
  
       <div class="station-middle">
@@ -32,7 +62,8 @@
       </div>
 
       <div class="station-bottom">
-        Change for Luton/Gatwick
+        <img src="/images/train-icon.png" /> 
+        Thameslink
       </div> 
 
     </div>
