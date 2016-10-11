@@ -9,7 +9,7 @@
 }
 
 .panel {
-  margin: 0.5em auto;
+  margin: 1em auto;
   background-color: rgba(255,255,255,0);
 }
 
@@ -49,34 +49,27 @@
   vertical-align: middle;
   top: 0;
   bottom: 0;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-in;
   left: 0;
   right: 0;
 }
 
-.line-element-right {
-  
+.line-element-moveleft {
+  right: 60%;
+}
+
+.line-element-moveright {
+  left: 60%;
 }
 
 .line-tickmark {
-  position: absolute;
-  vertical-align: middle;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   width: 0.5em;
-  margin: 0.5em auto 1.5em auto;
+  height: 1em;
+  margin: 0.5em auto 0 auto;
 }
 
 .line-circle-general {
-  position: absolute;
-  vertical-align: middle;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  margin: 0.25em auto 0 auto;
   background-color: rgb(250,250,250);
 }
 
@@ -161,7 +154,8 @@
 }
 
 .station {
-
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .station img {
@@ -182,4 +176,55 @@
   font-size: 1em;
 }
 
+.countdown {
 
+
+}
+
+.countdown-main {
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+
+.countdown-secondary {
+  transition: opacity 0.5s ease-in-out 0.2s;
+  display: none;
+  opacity: 0;
+}
+
+.countdown-secondary-message {
+
+}
+
+.countdown-secondary-trainafter {
+
+}
+
+.prediction {
+
+}
+
+.prediction-main {
+  font-size: 2em;
+  margin-bottom: 0.1em;
+
+}
+
+.prediction-secondary {
+  transition: opacity 0.5s ease-in-out 0.2s;
+  display: none;
+}
+
+.prediction-secondary-us {
+
+}
+
+.prediction-secondary-tfl {
+
+
+}
+
+.show-secondary {
+  display: block;
+  opacity: 1;
+}
